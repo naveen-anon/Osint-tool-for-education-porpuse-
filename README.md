@@ -2,6 +2,9 @@
 
 # installation 
 
+ firstly install the zip file and extract in your termux then use the script
+
+ 
 pkg update -y && pkg upgrade -y 
 
 git clone https://github.com/naveen-anon/Osint-tool-for-education-porpuse-.git
