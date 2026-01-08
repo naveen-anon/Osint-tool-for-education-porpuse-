@@ -23,7 +23,7 @@ mkdir -p ~/numberinfo
 cd ~/numberinfo || exit
 
 # Create main script
-cat > number_info.py << 'EOF'
+cat > number_info.sh << 'EOF'
 #!/usr/bin/env python3
 import os, json, time, requests
 from datetime import datetime
@@ -97,7 +97,7 @@ if __name__ == "__main__":
     main()
 EOF
 
-chmod +x number_info.py
+chmod +x number_info.sh
 
 # Create optional .env file
 cat > .env << 'EOF'
@@ -106,5 +106,5 @@ EOF
 
 echo "[5] Setup complete!"
 echo "Run your tool anytime using:"
-echo "  cd ~/numberinfo && python number_info.py"
+echo "  cd ~/numberinfo && bash number_info.sh"
 echo "-----------------------------------------"
